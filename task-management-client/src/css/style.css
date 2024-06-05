@@ -1,0 +1,69 @@
+/*RESET DEFAULT STYLES */
+*{
+    margin:0; 
+    padding:0; 
+    box-sizing: border-box;
+    
+}
+
+
+html{
+    font-size:62.5%;
+}
+
+/*SPACING SCALE*/
+:root{
+    --spacing-xs: 0.25rem; /* 4px*/
+    --spacing-sm: 0.5rem; /*8px*/
+    --spacing-md: 1rem; /*16*/
+    --spacing-sm: 1.5rem; /*24px*/
+    --spacing-sm: 3rem; /*32px*/
+
+}
+body{
+    font-size: 1.8rem;
+    font-family: sans-serif;
+
+}
+
+.container{
+    max-width: 126rem;
+    margin:0 auto;
+}
+
+/*HEADER BLOCK*/
+.header{
+    background-color: #333;
+    color:#fff;
+    padding:2rem; 
+    /* text-align:center; */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: var(--spacing-sm);/*10px*/
+
+
+}
+
+.header__title{
+}
+
+.header__welcome{
+    background-color: red;
+    padding: var(--spacing-md)/*5px*/
+}
+
+
+/*CREATE A MEDIA QUERY TO CHANGE FROM FLEX */
+/*LOGO BLOCK*/
+.header__logo{
+    width: calc(3.125 * var(--spacing-md));/*50px*/
+    height: calc(3.125 * var(--spacing-md))/*50px*/
+} 
+
+/*Task List Block */
+.task-list{
+    list-style: none;
+}
